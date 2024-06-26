@@ -14,8 +14,9 @@ public class BackgroundRepeat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x<-width)
+        if (transform.position.x<-width){
             Reposition();
+        }
     }
     private void Reposition(){
         Vector2 vector = new Vector2(width*2f,0);
